@@ -1,0 +1,75 @@
+.header {
+
+    &__container {
+        background: #050505;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 62px 150px 0 150px;
+        width: 100%;
+        @media (max-width:1285px) {
+            padding: 32px 150px 0 150px; 
+            height: 75px;
+             }
+        }
+    
+    &__logo {
+        margin-top: 7px;
+        &--text {
+            color: #575757;
+            font-size: 0.875rem;
+            font-family: $ff-main-italic;
+            font-weight: bold;
+            margin-top: 10px;
+            
+            @media (max-width:1610px) {
+            margin-left: 20px; 
+             }
+
+        }
+        
+        
+    }
+
+&__contacts {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 140px;
+    margin-top: -4px;
+    @media (max-width:1610px) {
+        margin-left: 50px; 
+    }
+    
+
+    &--tel {
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+    &--text {
+        font-family: $ff-bebas;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color:#ffffff;
+        display: inline-block;
+        vertical-align: top;
+        @media (max-width:1285px) {
+            font-size: 1.2rem;
+        }
+        &:hover {
+            color: lighten(#977869,7%);
+        }
+    }
+    &--icon {
+        display: inline-block;
+        vertical-align: top;
+        color: #b58f7e;
+        font-size: 1.5625rem;
+        margin-right: 30px;
+        transform: rotate(-35deg);
+        
+    }
+   
+}   
+
+}

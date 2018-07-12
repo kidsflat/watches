@@ -1,0 +1,47 @@
+.nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 85px;
+    
+
+    @media (max-width:1370px) {
+        margin-left: 0;
+        margin-bottom: 25px; 
+    }
+
+
+    &__link {
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 5px;
+        margin-left: 80px;
+        font-family: $ff-bebas;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        transition: 0.3s;
+        font-size: 1.125rem;
+        
+        @media (max-width:1285px) {
+            margin-left: 0;
+            margin-bottom: 25px; 
+            font-size: 0.9rem;
+        }
+
+    @media (max-width:1505px) {
+        margin-left: 50px; 
+    }
+    @media (max-width:1250px) {
+        margin-left: 25px; 
+    }
+
+
+
+        &:hover,
+        &--active {
+            color: #977869;
+            border-bottom: 2px solid #b6907e;
+        }
+
+    }
+}

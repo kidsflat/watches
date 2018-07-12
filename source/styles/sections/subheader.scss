@@ -1,11 +1,15 @@
 .subheader {
+
+    &__container {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 150px 0 150px;
     background: #0e0e0e;
     width: 100%;
     height: 60px;
-    
+    }
+
     &__text {
         font-family: $ff-main-italic;
         font-weight: bold;
@@ -27,12 +31,13 @@
 
         &--notification {
             position: relative;
-
+            margin-right: 32px;
 
             &:after {
                 @include centerer-X();
                 content: '3';
                 padding-top:4.5px;
+                margin-left: 10px;
                 text-align: center;
                 font-family: $ff-main-bold;
                 color: #f6f2f0;

@@ -9,6 +9,14 @@ const concat = require('gulp-concat');
 const sourcemaps   = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 
+
+
+gulp.task('copy:slick', function() {
+  return gulp.src('./source/slick/**/*.*')
+    .pipe(gulp.dest('build/slick'));
+});
+
+
 /* -------- Server  -------- */
 gulp.task('server', function() {
   browserSync.init({
@@ -34,6 +42,7 @@ gulp.task('templates:compile', function buildHTML() {
 gulp.task('styles:compile', function () {
   return gulp.src('source/styles/main.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('build/css'));
 });
@@ -46,10 +55,12 @@ gulp.task('auto', () =>
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css'))
 );
+
 /* --------  js -------- */
 gulp.task('js', function() {
     return gulp.src([
-            'source/js/main.js'
+         'source/js/main.js'
+            
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('main.min.js'))
@@ -57,6 +68,7 @@ gulp.task('js', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/js'));
 });
+
 
 /* ------------ Delete ------------- */
 gulp.task('clean', function del(cb) {
@@ -76,7 +88,7 @@ gulp.task('copy:images', function() {
 });
 
 /* ------------ Copy ------------- */
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:slick'));
 
 /* ------------ Watchers ------------- */
 gulp.task('watch', function() {

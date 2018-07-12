@@ -1,0 +1,8 @@
+nav.nav
+  - var items = ['Watches', 'Services', 'Faqs', 'Contact','Request virtual']
+  - var dataItems = ['Watches', 'Services', 'Faqs', 'Contact','Request virtual']
+  each item, key in items
+    if item === 'Watches'
+      a.nav__link.nav__link--active(href="#" data-link=dataItems[key])= item
+    else
+      a.nav__link(href="#" data-link=dataItems[key])= item

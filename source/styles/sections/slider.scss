@@ -1,0 +1,28 @@
+.slider {
+    &__button {
+        margin-right: 30px;
+    }
+    &__slide--1 {
+        background: url("../images/header/bg-first.png") center/cover no-repeat;
+    }
+    &__slide--2 {
+        background: url("../images/header/bg-second.png") center/cover no-repeat;
+    }
+    &__container {
+ 
+        padding: 205px 150px 0 150px;
+        min-width: 700px;
+    }
+    
+    &__text {
+        font-family: $ff-bebas;
+        font-weight: bold;
+        font-size: 5.125rem;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__buttons {
+        margin-top: 55px;
+        padding-bottom:300px;
+    }
+}

@@ -3,14 +3,18 @@
     border-radius: 3px;
     padding:  10px 30px 7px 25px;
     text-decoration: none;
-    color: #fff;
+    font-family: $ff-bebas;
+    text-transform: uppercase;
+    color: #977869;
 
-    &--red {
-        background-color: #de2b24;
+    &--pink {
+        background-color: transparent;
+        font-size: 1.125rem;
+        border: 2px solid #977869;
         transition: 0.3s;
 
         &:hover {
-            background: lighten(#de2b24,7%);
+            background: lighten(#977869,7%);
         }
     }
 
