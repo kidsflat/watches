@@ -1,9 +1,15 @@
 .brands {
     &__container--1 {
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
         padding: 45px 150px 45px 150px;
         background-color: #0e0e0e;
     }
     &__container--2 {
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
         padding: 45px 150px 45px 150px;
         background-color: #f5f5f5;
     }
@@ -11,6 +17,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media (max-width:1600px) {
+            margin-bottom:30px;
+            margin-right: 10px;
+             }
 
         &--1 {
             background: url("../images/brand/rado.png") center no-repeat;

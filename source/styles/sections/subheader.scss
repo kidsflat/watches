@@ -8,7 +8,12 @@
     background: #0e0e0e;
     width: 100%;
     height: 60px;
+    @media (max-width:800px) {
+        flex-direction: column;
+        
+         }
     }
+
 
     &__text {
         font-family: $ff-main-italic;
@@ -23,6 +28,10 @@
             color: #fcfcfc;
             text-decoration: none;
             margin-left: 55px;  
+            @media (max-width:1000px) {
+                margin-left:25px;
+                
+                 }
         }
 
         &--icon {

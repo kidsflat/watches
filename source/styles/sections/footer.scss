@@ -37,6 +37,11 @@
             color:#333333;
             margin-left: 25px;
             font-size: 1.1rem;
+            @media (max-width:1550px) {
+                margin-left: 15px;
+                font-size: 0.8rem;
+                
+                 }
         }
         }
     }
@@ -50,17 +55,29 @@
             font-family: "bebas-neue";
             font-weight: bold;
             font-size: 1.875rem;
+            @media (max-width:1550px) {
+                
+                font-size: 1.3rem;
+                
+                 }
         }
         &--email {
             background: transparent;
             border: 2px solid #2b2b2b;
             height: 50px;
             width: 255px;
+            @media (max-width:1100px) {
+                width: 75px;
+                height: 25px;
+                font-size: 0.93rem;
+                
+                 }
 
             &::placeholder {
                 padding-left:35px;
                 font-size: 1.125rem;
                 color: #2d2d2d;
+                
             }
         }
         &--button {
@@ -71,6 +88,12 @@
             font-family: $ff-bebas;
             font-size: 1.125rem;
             color:#755647;
+            @media (max-width:1100px) {
+                width: 75px;
+                height: 25px;
+                font-size: 0.93rem;
+                
+                 }
         }
     }
 
@@ -94,6 +117,12 @@
     }
     &__menu {
         padding-left:90px;
+        @media (max-width:1550px) {
+                
+            padding-left:30px;
+            
+             }
+        
 
         &--title {
             color:#ffffff;
@@ -101,6 +130,11 @@
             font-weight: bold;
             font-size: 1.875rem;
             margin: 0;
+            @media (max-width:1550px) {
+                
+                font-size: 1.3rem;
+                
+                 }
             }
 
             &--list {
@@ -111,6 +145,11 @@
                 font-weight: bold;
                 font-size: 1.125rem;
                 padding-top:20px;
+                @media (max-width:1550px) {
+                
+                    font-size: 0.8rem;
+                    
+                     }
             }
 
             &--lists {
@@ -121,6 +160,11 @@
                 text-decoration: none;
                 padding-bottom: 40px;
                 padding-right: 125px;
+                @media (max-width:1550px) {
+                
+                    padding-right:60px;
+                    
+                     }
             }
     }
 }

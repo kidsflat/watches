@@ -1,14 +1,22 @@
 .say {
 
 &__container--1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 85px 150px 205px 150px;
     background-color: #000000;
     color:#ffffff;
+   
 }
 &__container--2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 85px 150px 205px 150px;
     color: #000000;
     background-color: #ffffff;
+    
 }
 
 &__title {
@@ -26,12 +34,20 @@
 
 &__list {
         display: flex;
+        @media (max-width:800px) {
+            flex-direction: column;
+            
+             }
 
 }
 
 &__dialog {
-
+   
     padding-right: 40px;
+    @media (max-width:1300px) {
+        padding-right: 20px;
+        
+         }
 
     &--amanda {
         background: url("../images/say/amanda.png") center no-repeat;
@@ -52,6 +68,11 @@
 
 &__about {
     padding-right: 165px;
+    @media (max-width:1300px) {
+        padding-right: 80px;
+        
+         }
+   
 
     &--title {
         font-family: $ff-bebas;
