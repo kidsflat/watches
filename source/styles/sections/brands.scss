@@ -1,0 +1,36 @@
+.brands {
+    &__container--1 {
+        padding: 45px 150px 45px 150px;
+        background-color: #0e0e0e;
+    }
+    &__container--2 {
+        padding: 45px 150px 45px 150px;
+        background-color: #f5f5f5;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &--1 {
+            background: url("../images/brand/rado.png") center no-repeat;
+            min-width: 215px;
+            min-height: 70px;
+        }
+        &--2 {
+            background: url("../images/brand/swatch.png") center no-repeat;
+            min-width: 225px;
+            min-height: 40px;
+        }
+        &--3 {
+            background: url("../images/brand/omega.png") center no-repeat;
+            min-width: 170px;
+            min-height: 75px;
+        }
+        &--4 {
+            background: url("../images/brand/zenith.png") center no-repeat;
+            min-width: 230px;
+            min-height: 90px;
+        }
+    }
+}

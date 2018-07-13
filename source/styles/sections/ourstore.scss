@@ -4,16 +4,29 @@
 }
 
 &__container--1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 300px 150px 200px 150px;
     margin-left: 700px;
     min-height: 900px;
+    @media (max-width:1385px) {
+        padding: 32px 150px 0 150px; 
+        margin-left:400px;
+         }
     
 }
 &__container--2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 300px 10px 200px 300px;
     margin-left: 700px;
     min-height: 900px;
-    
+    @media (max-width:1385px) {
+        padding: 32px 150px 0 150px; 
+        margin-left:400px;
+         }
 }
 &__title--1 {
     display: flex;
@@ -54,5 +67,6 @@
 &__slide--2 {
     background: url("../images/services/services-2.png") no-repeat;
     background-size: 50%;
+    
 }
 }

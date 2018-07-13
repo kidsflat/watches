@@ -26,4 +26,13 @@ $(document).ready(function(){
         });
         
 });
+$(document).ready(function(){
+  $('.brands').slick({
+    //autoplay: true,
+    dots:false,
+    arrows:false
+        });
+        
+});
+
 
