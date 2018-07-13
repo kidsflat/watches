@@ -34,5 +34,13 @@ $(document).ready(function(){
         });
         
 });
+$(document).ready(function(){
+  $('.say').slick({
+    //autoplay: true,
+    dots:false,
+    arrows:false
+        });
+        
+});
 
 

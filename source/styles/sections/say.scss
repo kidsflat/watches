@@ -1,0 +1,68 @@
+.say {
+
+&__container--1 {
+    padding: 85px 150px 205px 150px;
+    background-color: #000000;
+    color:#ffffff;;
+}
+&__container--2 {
+    padding: 85px 150px 205px 150px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+&__title {
+        text-align: center;
+        margin-bottom: 130px;
+
+    &--text{
+        
+        font-family: $ff-bebas;
+        font-weight: bold;
+        font-size: 3rem;
+        
+    }
+}
+
+&__list {
+        display: flex;
+
+}
+
+&__dialog {
+
+    padding-right: 40px;
+
+    &--amanda {
+        background: url("../images/say/amanda.png") center no-repeat;
+        width: 120px;
+        height: 120px;
+    }
+    &--sandra {
+        background: url("../images/say/sandra.png") center no-repeat;
+        width: 120px;
+        height: 120px;
+    }
+    
+}
+&__item {
+    display: flex;
+    
+}
+
+&__about {
+    padding-right: 165px;
+
+    &--title {
+        font-family: $ff-bebas;
+        font-weight: bold;
+        font-size: 2.25rem;
+
+    }
+    &--description {
+        color:#767676;
+        line-height: 2;
+        font-size: 1.125rem;
+    }
+}
+}
