@@ -1,0 +1,133 @@
+.footer {
+    &__container {
+    padding: 90px 150px 75px 150px;
+    background-color: #0e0e0e;
+    }
+    &__list {
+        min-height: 200px;
+
+    }
+
+
+    .social {
+        
+        display: flex;
+        flex-wrap: wrap;
+
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            }
+        
+        &__copyright{
+            
+            color: #494949;
+            font-size:1rem; 
+        }
+
+        &__bottom {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__links {
+        display: flex;
+        &--link {
+            color:#333333;
+            margin-left: 25px;
+            font-size: 1.1rem;
+        }
+        }
+    }
+
+    &__feedback {
+
+        &--title{
+            margin: 0;
+            padding-bottom:20px;
+            color: #ffffff;
+            font-family: "bebas-neue";
+            font-weight: bold;
+            font-size: 1.875rem;
+        }
+        &--email {
+            background: transparent;
+            border: 2px solid #2b2b2b;
+            height: 50px;
+            width: 255px;
+
+            &::placeholder {
+                padding-left:35px;
+                font-size: 1.125rem;
+                color: #2d2d2d;
+            }
+        }
+        &--button {
+            width: 150px;
+            height: 50px;
+            background:#b6907e;
+            border:none;
+            font-family: $ff-bebas;
+            font-size: 1.125rem;
+            color:#755647;
+        }
+    }
+
+    &__logo {
+        &--text {
+            color: #575757;
+            font-size: 0.875rem;
+            font-family: $ff-main-italic;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        height: 125px;
+    }
+    &__menu {
+        padding-left:90px;
+
+        &--title {
+            color:#ffffff;
+            font-family: $ff-bebas;
+            font-weight: bold;
+            font-size: 1.875rem;
+            margin: 0;
+            }
+
+            &--list {
+                margin-top:0;
+                margin-left:-36px;
+                color:#5e5d5d;
+                font-family: $ff-bebas;
+                font-weight: bold;
+                font-size: 1.125rem;
+                padding-top:20px;
+            }
+
+            &--lists {
+                display: flex;
+
+            }
+            &--el {
+                text-decoration: none;
+                padding-bottom: 40px;
+                padding-right: 125px;
+            }
+    }
+}
+
+.menu {
+    &__link{
+        text-decoration: none;
+        color:#5e5d5d;
+        }
+}
